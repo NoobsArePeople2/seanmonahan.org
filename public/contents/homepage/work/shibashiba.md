@@ -21,6 +21,10 @@ id: shibashiba
         </p>
 
         <p class="highlight">
+            [Visit Site](http://shibashibagame.com/)
+        </p>
+
+        <p class="highlight">
             [Get it on the App Store](https://itunes.apple.com/us/app/shibashiba/id514462740?ls=1&mt=8)
         </p>
     </div>
