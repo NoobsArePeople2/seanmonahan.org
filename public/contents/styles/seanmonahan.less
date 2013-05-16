@@ -1,0 +1,846 @@
+@import "colors.less";
+@import "fonts.less";
+@import "mixins.less";
+
+//=============================================
+// General Stuff
+//=============================================
+
+html {
+  color: lighten(@black, 15%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  .playfair-display;
+  font-weight: bold;
+  color: @pink;
+}
+
+hr {
+  border: solid @pink;
+  border-width: 1px 0 0 0;
+  .opacity(30);
+  margin: 30px 0;
+}
+
+a {
+  &, &:visited {
+    color: @blue;
+    .transition(color 0.33s);
+  }
+
+  &:hover, &:active {
+    color: @pink;
+  }
+}
+
+.right {
+  float: right;
+}
+
+//=============================================
+// Intro Section
+//=============================================
+
+#intro-pad {
+  height: 46px;
+  width: 100%;
+}
+
+.intro {
+  text-align: center;
+  height: 670px;
+
+  background-image:url(/images/sean_500w.png);
+  .bg-image-2x('/images/sean_1000w.png');
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:center;
+
+  position: relative;
+
+  img {
+    max-width: 100%;
+  }
+
+  div {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: @white;
+    background: rgba(255, 255, 255, 0.9);
+
+    h1 {
+      .playfair-display;
+      color: lighten(@black, 25%);
+      font-size: 2.0em;
+      font-weight: bold;
+      line-height: 1.0em;
+      text-align: center;
+
+      span {
+        display: inline-block;
+        position: static;
+        background: transparent;
+        font-style: italic;
+
+        &.yellow {
+          color: lighten(@black, 25%);
+          background: darken(@yellow, 5%);
+          padding: 0.5em;
+          font-size: 1.6em;
+        }
+
+        &.dark-pink {
+          color: darken(@pink, 15%);
+          font-style: normal;
+          }
+      }
+
+      a {
+        color: @white;
+        background: darken(@pink, 15%);
+        .transition(background 0.33s);
+        padding-left: 8px;
+        padding-right: 8px;
+        font-style: italic;
+
+        &:hover {
+          color: darken(@pink, 15%);
+          background: transparent;
+        };
+      }
+    }
+  }
+}
+
+#nav {
+  background: @blue;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  z-index: 999;
+
+  ul {
+    height: 40px;
+    width: 100%;
+    margin-bottom: 0;
+
+    li {
+      float: left;
+      display: block;
+      margin-bottom: 0;
+
+      &:first-child {
+        a {
+          .playfair-display;
+          text-transform: none;
+          font-size: 1.6em;
+          font-style: italic;
+          font-weight: bold;
+        }
+      }
+
+      &.right {
+        float: right;
+      }
+
+      &.img {
+
+        a {
+          height: 40px;
+          width: 40px;
+          padding: 0;
+          img {
+            margin: 4px;
+            width: 32px;
+            height: 32px;
+          }
+        }
+      }
+
+      a {
+        .archivo-black;
+        color: @white;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-shadow: 0 -1px 0px @blue_dark;
+        font-size: 1.4em;
+        padding: 10px 8px 0 8px;
+        display: block;
+        height: 30px;
+        .transition(background 0.33s);
+
+        &:hover, &.active {
+          background: @blue_dark;
+        }
+      }
+    }
+  }
+}
+
+#nav-pad {
+  height: 40px;
+  background: @blue;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+//=============================================
+// Home Page
+//=============================================
+
+#work, #labs {
+  padding-top: 46px;
+
+  h3 {
+    color: lighten(@black, 25%);
+    background: darken(@yellow, 5%);
+    padding: 0.5em;
+    font-size: 1.8em;
+    font-style: italic;
+  }
+
+  .four.columns {
+    margin-left: 0;
+  }
+
+  .splash {
+    width: 100%;
+
+    .columns {
+      &.twelve {
+        margin-left: 20px;
+        margin-right: 0;
+        float: right;
+        position: relative;
+
+        h3 {
+          &:first-child {
+            display: none;
+            position: absolute;
+          }
+        }
+
+      }
+    }
+
+  }
+
+  .highlight {
+    a {
+      color: @white;
+      background: darken(@pink, 15%);
+      .transition(background 0.33s);
+      padding: 0.5em;
+      font-style: italic;
+
+      &:hover {
+        color: darken(@pink, 15%);
+        background: transparent;
+      };
+    }
+  }
+}
+
+#labs {
+  padding-top: 0;
+
+  h2 {
+    color: @white;
+    font-size: 3em;
+    font-style: italic;
+    background: @pink;
+    padding: 8px;
+    width: 100px;
+    float: left;
+  }
+
+  span {
+    color: lighten(@black, 25%);
+    font-size: 1.6em;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.2em;
+    margin-left: 8px;
+    float: left;
+  }
+}
+
+//=============================================
+// About and Services
+//=============================================
+
+#about-wrapper {
+  width: 100%;
+  background: lighten(@blue_fade, 25%);
+  margin-top: 4.0em;
+  padding-top: 5.0em;
+  padding-bottom: 10.0em;
+  border-top: 2px solid lighten(@blue_fade, 0%);
+}
+
+#about, #resume {
+
+  padding-top: 5.0em;
+
+  h2 {
+    .playfair-display;
+    color: lighten(@black, 25%);
+    font-size: 2.0em;
+    font-weight: bold;
+    line-height: 1.0em;
+    text-align: left;
+
+    em {
+      color: @pink;
+      font-size: 0.9em;
+    }
+
+    span {
+      display: inline-block;
+      position: static;
+      background: transparent;
+      font-style: italic;
+
+      &.yellow {
+        color: lighten(@black, 25%);
+        background: darken(@yellow, 5%);
+        padding: 0.5em;
+        font-size: 1.6em;
+      }
+    }
+  }
+}
+
+#resume {
+  padding-top: 1.0em;
+  margin-top: 1.0em;
+  border-top: 1px solid lighten(@blue, 25%);
+
+  a {
+    &:hover {
+      color: lighten(@blue, 15%);
+    }
+  }
+}
+
+#services {
+
+  .one-third.column {
+
+    &:first-child {
+      margin-left: 0;
+      margin-right: 20px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+      margin-left: 20px;
+    }
+  }
+
+  h3 {
+    .playfair-display;
+    color: lighten(@black, 25%);
+    background: darken(@yellow, 5%);
+    padding: 0.5em;
+    font-size: 2.0em;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.0em;
+    text-align: left;
+  }
+
+}
+
+//=============================================
+// Contact
+//=============================================
+
+#contact-wrapper {
+  width: 100%;
+  background: lighten(@yellow, 35%);
+  padding-top: 0;
+  padding-top: 10.0em;
+  padding-bottom: 30.0em;
+  border-top: 2px solid lighten(@yellow, 0%);
+}
+
+#contact {
+
+  .sixteen.columns {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  span {
+
+    .playfair-display;
+    font-size: 2.5em;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1em;
+
+    &.blue {
+      color: @blue;
+    }
+
+    &.light-blue {
+      color: lighten(@blue, 10%);
+    }
+
+    &.gray {
+      color: ligthen(@black, 25%);
+      font-size: 2.0em;
+      font-style: normal;
+    }
+
+    &.pink {
+      color: @pink;
+      font-size: 2.0em;
+      font-style: normal;
+    }
+
+    a {
+      color: @white;
+      background: darken(@blue, 15%);
+      .transition(background 0.33s);
+      padding: 0.25em;
+
+      &:hover {
+        color: darken(@blue, 15%);
+        background: transparent;
+      };
+    }
+
+  }
+
+}
+
+//=============================================
+// Articles
+//=============================================
+
+#article {
+
+  padding-top: 66px;
+  padding-bottom: 66px;
+
+  h3 {
+    color: lighten(@black, 25%);
+    background: darken(@yellow, 5%);
+    padding: 0.5em;
+    font-size: 2em;
+    font-style: italic;
+  }
+
+  h4 {
+    margin-top: 12px;
+    font-style: normal;
+  }
+
+  ul {
+    list-style: square inside;
+  }
+
+  p, ul {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  #sidebar {
+
+    hr {
+      &:first-child {
+        display: none;
+      }
+
+      margin: 12px 0;
+    }
+
+    // position: absolute;
+    text-align: center;
+
+    p, ul {
+      font-size: 14px;
+      line-height: 21px;
+    }
+
+    p, h5, ul {
+      text-align: left;
+    }
+
+    ul {
+      li {
+        padding-left: 2px;
+        list-style: none;
+      }
+    }
+
+  }
+
+  .youtube-embed {
+    width: 100%;
+    height: 394px;
+  }
+
+}
+
+//=============================================
+// Footer
+//=============================================
+
+#footer {
+  width: 100%;
+  background: lighten(@yellow, 35%);
+  padding-top: 0;
+  padding-top: 5.0em;
+  padding-bottom: 5.0em;
+  border-top: 4px solid lighten(@yellow, 20%);
+
+  span {
+
+    .playfair-display;
+    font-size: 2.5em;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1em;
+
+    &.blue {
+      color: @blue;
+    }
+
+    &.light-blue {
+      color: lighten(@blue, 10%);
+    }
+
+    &.gray {
+      color: ligthen(@black, 25%);
+      font-size: 2.0em;
+      font-style: normal;
+    }
+
+    &.pink {
+      color: @pink;
+      font-size: 2.0em;
+      font-style: normal;
+    }
+
+    a {
+      color: darken(@blue, 15%);
+      .transition(color 0.33s);
+
+      &:hover {
+        color: lighten(@blue, 15%);
+      };
+    }
+
+  }
+
+}
+
+//=============================================
+// Tablet (Portrait)
+// Note: Design for a width of 768px
+//=============================================
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+  #work, #labs {
+
+    .splash {
+      .columns {
+        &.four {
+          margin-left: 10px;
+        }
+
+        &.twelve {
+          margin-right: 10px;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  #labs {
+    .header {
+      margin-left: 10px;
+      margin-right: 10px;
+
+      span {
+        font-size: 1.4em;
+      }
+    }
+  }
+
+  #about-wrapper {
+
+    .container {
+      width: 748px;
+      margin-left: 10px;
+      margin-right: 0;
+
+      .one-third.column {
+        &:first-child {
+          margin-right: 10px;
+        }
+        &:last-child {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  #about {
+    .header {
+      width: 748px;
+      margin-right: 0;
+    }
+  }
+
+  #article {
+    .youtube-embed {
+      height: 313px;
+    }
+  }
+
+}
+
+//=============================================
+// Mobile (Portrait)
+// Note: Design for a width of 320px
+//=============================================
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+  .intro {
+    height: 450px;
+      div {
+        h1 {
+          font-size: 1.2em;
+          line-height: 1.1em;
+
+          a {
+            display: inline-block;
+            height: 1.6em;
+          }
+        }
+    }
+  }
+
+  #nav {
+    ul {
+      li {
+
+        &:first-child {
+          a {
+            font-size: 1.2em;
+            padding-top: 9px;
+          }
+        }
+
+        a {
+          font-size: 1.0em;
+          padding-right: 4px;
+          padding-left: 4px;
+        }
+
+        &.img {
+          a {
+            width: 32px;
+            img {
+              margin-top: 12px;
+              margin-left: 8px;
+              width: 16px;
+              height: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #work, #labs {
+    .splash {
+      .columns {
+        &.four {
+          h3 {
+            &:first-child {
+
+              display: none;
+
+            }
+          }
+        }
+
+        &.twelve {
+          h3 {
+            &:first-child {
+
+              display: block
+
+            }
+          }
+          img {
+            padding-top: 30px;
+          }
+        }
+      }
+    }
+  }
+
+  #labs {
+    span {
+      font-size: 1.0em;
+      margin-left: 0;
+    }
+  }
+
+  #about, #resume {
+
+    h2 {
+
+      font-size: 1.6em;
+
+      span {
+
+        &.yellow {
+
+          font-size: 1.0em;
+          line-height: 1.2em;
+
+        }
+      }
+    }
+  }
+
+  #services {
+    .one-third.column {
+
+      &:first-child {
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
+  }
+
+  #contact {
+
+    span {
+
+      a {
+        padding: 0.125em;
+      }
+
+    }
+
+  }
+
+  #article {
+
+    #sidebar {
+
+      position: static;
+      margin-top: 20px;
+
+      hr {
+        &:first-child {
+          display: block;
+        }
+      }
+
+      img {
+        padding-top: 20px;
+      }
+
+      ul {
+
+        li {
+
+          float: left;
+          width: 100px;
+          padding-left: 0;
+
+        }
+
+      }
+
+    }
+
+    .youtube-embed {
+      height: 169px;
+    }
+
+  }
+
+}
+
+//=============================================
+// Mobile (Landscape)
+// Note: Design for a width of 480px
+//=============================================
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+  .intro {
+    height: 570px;
+    div {
+      h1 {
+        font-size: 1.4em;
+        line-height: 1.3em;
+
+        span {
+          &:after {
+            content: "\A";
+            white-space: pre;
+          }
+        }
+      }
+    }
+  }
+
+
+
+  #labs {
+    span {
+      font-size: 1.0em;
+      margin-left: 0;
+    }
+  }
+
+  #services {
+
+    h3 {
+      .playfair-display;
+      color: lighten(@black, 25%);
+      background: darken(@yellow, 5%);
+      padding: 0.5em;
+      font-size: 1.6em;
+      font-weight: bold;
+      font-style: italic;
+      line-height: 1.2em;
+      text-align: left;
+    }
+
+  }
+
+  #article {
+    .youtube-embed {
+      height: 242px;
+    }
+  }
+
+}
+

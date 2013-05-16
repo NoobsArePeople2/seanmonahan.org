@@ -1,0 +1,18 @@
+ul
+  li
+    - if (page.metadata.title == "Sean Monahan")
+      a(href="/#intro-pad", id="nav-home") SM
+    - else
+      a(href="/", id="nav-home") SM
+  li
+    a(href="/#work", id="nav-work") Work
+  li
+    a(href="/#about", id="nav-about") About
+  li
+    a(href="/#contact", id="nav-contact") Contact
+  li.right.img.github
+    a(href="#{github_url}")
+      img(src="/images/icons/github-64.png", alt="Github")
+  li.right.img.twitter
+    a(href="#{twitter_url}")
+      img(src="/images/icons/twitter-64.png", alt="Twitter")

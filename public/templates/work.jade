@@ -1,0 +1,19 @@
+extends layout
+
+block prepend title
+  | #{ page.metadata.title } |&nbsp;
+
+block container
+  nav(id="nav")
+    include partials/navigation
+  div.container(id="article")
+    section.twelve.columns
+      != page.html
+    section.four.columns(id="sidebar")
+      include partials/sean-sidebar
+      hr
+      include partials/work-sidebar
+
+block footer
+  div.wrapper(id="footer")
+    include partials/footer

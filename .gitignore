@@ -1,0 +1,9 @@
+assets/
+build/
+default/
+design/
+node_modules/
+skeleton/
+public/build/
+
+.DS_Store
