@@ -1,6 +1,6 @@
 ---
 title: Gnip Gnop
-order: 1
+order: 2
 ---
 
 <div id="gnipgnop-splash" class="clearfix splash">
