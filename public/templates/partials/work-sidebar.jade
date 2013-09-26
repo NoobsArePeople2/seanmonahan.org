@@ -9,7 +9,14 @@ ul
 hr
 h5 Labs
 ul
-  li
-    a(href="/labs/framed") Framed
-  li
-    a(href="/labs/gnipgnop") GnipGnop
+  - var labs = [];
+  - var content = contents.labs;
+  - for (var lab in content) {
+  -   labs.push(content[lab]._.pages[0]);
+  - }
+  - labs = _.sortBy(labs, function(item) {
+  -   return item.metadata['date'];
+  - });
+  each lab in labs
+    li
+      a(href="#{lab.url}") #{lab.metadata.title}

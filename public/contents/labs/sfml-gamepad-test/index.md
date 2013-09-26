@@ -3,6 +3,7 @@ title: SFML Gamepad Test
 author: Sean Monahan
 template: work.jade
 description: A simple testbed application for gamepads in SFML. Usefule for mapping controller indexes to physical buttons.
+date: 2013-09-25
 ---
 
 ### SFML Gamepad Test
