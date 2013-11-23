@@ -1,8 +1,9 @@
 ---
 title: Elastic Suite
 author: Sean Monahan
-template: work.jade
+template: article.jade
 description: B2B retail sales for desktops, tablets and web browser.
+date: 2011-12-01
 ---
 
 ### Elastic Suite

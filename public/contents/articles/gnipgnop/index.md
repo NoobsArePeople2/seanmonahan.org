@@ -1,7 +1,7 @@
 ---
 title: GnipGnop
 author: Sean Monahan
-template: work.jade
+template: article.jade
 description: An experimental browser-based, multi-device, networked multiplayer game written in Javascript.
 date: 2013-03-01
 ---

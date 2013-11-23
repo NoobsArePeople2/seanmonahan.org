@@ -1,7 +1,7 @@
 ---
 title: Framed
 author: Sean Monahan
-template: work.jade
+template: article.jade
 description: An Actionscript library for exporting MovieClips and the Flash Stage to PNG sequences for games and other applications.
 date: 2013-05-01
 ---

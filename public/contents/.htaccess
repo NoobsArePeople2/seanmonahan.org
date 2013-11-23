@@ -2,3 +2,11 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.+)$ $1.html [L,QSA]
+
+Redirect /labs/framed /articles/framed
+Redirect /labs/gnipgnop /articles/gnipgnop
+Redirect /labs/sfml-gamepad-test /articles/sfml-gamepad-test
+
+Redirect /work/beat-boost /articles/beat-boost
+Redirect /work/elastic-suite /articles/elastic-suite
+Redirect /work/shibashiba /articles/shibashiba

@@ -1,0 +1,13 @@
+h5 More Articles
+ul
+  - var articles = [];
+  - var content = contents.articles;
+  - for (var article in content) {
+  -   articles.push(content[article]._.pages[0]);
+  - }
+  - articles = _.sortBy(articles, function(item) {
+  -   return item.metadata['date'];
+  - });
+  each article in articles
+    li
+      a(href="#{article.url}") #{article.metadata.title}

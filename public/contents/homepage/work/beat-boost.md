@@ -25,7 +25,7 @@ id: beat-boost
         </p>
 
         <p class="highlight">
-            [Read More](/work/beat-boost)
+            [Read More](/articles/beat-boost/)
         </p>
     </div>
 </div>

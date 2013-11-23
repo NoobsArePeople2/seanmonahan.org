@@ -21,7 +21,7 @@ id: elastic-suite
             [Visit Site](http://elasticsuite.com/)
         </p>
         <p class="highlight">
-            [Read More](/work/elastic-suite)
+            [Read More](/articles/elastic-suite/)
         </p>
     </div>
 </div>

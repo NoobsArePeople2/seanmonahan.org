@@ -20,7 +20,7 @@ order: 2
         </p>
 
         <p class="highlight">
-            [Read More](/labs/gnipgnop)
+            [Read More](/articles/gnipgnop/)
         </p>
 
     </div>

@@ -1,8 +1,9 @@
 ---
 title: Beat Boost
 author: Sean Monahan
-template: work.jade
+template: article.jade
 description: The third-place finalist in Boing Boing's Games Inspired by Music, Beat Boost is a Flash game where the levels are generated directly from the music.
+date: 2010-07-16
 ---
 
 ### Beat Boost

@@ -27,5 +27,9 @@ id: shibashiba
         <p class="highlight">
             [Get it on the App Store](https://itunes.apple.com/us/app/shibashiba/id514462740?ls=1&mt=8)
         </p>
+
+        <p class="highlight">
+            [Get it on Google Play](https://play.google.com/store/apps/details?id=com.typeoneerror.games.Shibashiba)
+        </p>
     </div>
 </div>

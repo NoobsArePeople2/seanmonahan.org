@@ -20,7 +20,7 @@ order: 1
         </p>
 
         <p class="highlight">
-            [Read More](/labs/framed)
+            [Read More](/articles/framed/)
         </p>
 
     </div>

@@ -22,6 +22,7 @@ head
       link(rel="stylesheet", href="/styles/skeleton.css")
       link(rel="stylesheet", href="/styles/layout.css")
       link(rel="stylesheet", href="/styles/seanmonahan.css")
+      link(rel="stylesheet", href="/font-awesome/css/font-awesome.min.css")
 
       include partials/ga
 
@@ -36,9 +37,15 @@ head
       link(rel="apple-touch-icon", sizes="114x114", href="/images/apple-touch-icon-114x114.png")
 
       block js
+        include partials/js
 
   - var page_name = page.title.toLowerCase().replace(' ', '-');
   body(class="#{page_name}")
     block header
+    block nav
+      nav(id="nav")
+        include partials/navigation
     block container
     block footer
+      footer.wrapper(id="footer")
+        include partials/footer

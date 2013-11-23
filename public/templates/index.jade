@@ -1,13 +1,10 @@
 extends layout
 
-block js
+block js append
   include partials/homepage/js
 
 block container
-  nav(id="nav")
-    block nav
-      include partials/navigation
-  div.container
+  div.container(id="home-page")
     div(id="intro-pad")
     section.sixteen.columns.intro(id="intro")
       block intro
