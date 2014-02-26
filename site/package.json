@@ -1,0 +1,14 @@
+{
+    "name": "seanmonahan.org-wintersmith",
+    "version": "4.0.0",
+    "description": "Website for Sean Monahan",
+    "devDependencies": {
+        "underscore": "~1.6.0"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": "none",
+    "author": "Sean Monahan",
+    "license": "MIT"
+}

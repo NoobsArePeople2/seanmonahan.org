@@ -1,0 +1,40 @@
+{
+    "locals": {
+        "url": "http://seanmonahan.org",
+        "name": "Sean Monahan",
+        "owner": "Sean Monahan",
+        "description": "Designer and Maker of Apps, Games and Beer",
+        "version": "Version 3.0",
+
+        "email": "hello@seanmonahan.org",
+        "twitter_url": "https://twitter.com/NoobsArePeople2",
+        "github_url": "https://github.com/NoobsArePeople2",
+        "steam_url": "http://steamcommunity.com/id/NoobsArePeople2",
+        "linkedin_url": "https://www.linkedin.com/in/seanpmonahan",
+
+        "separator": "|",
+
+        "assets": {
+            "css": {
+                "all": [
+                    "/styles/*"
+                ]
+            },
+
+            "js": {
+                "all": [
+                    "/js/*"
+                ]
+            }
+        },
+
+        "mode": "production"
+    },
+
+    "require": {
+        "_": "underscore"
+    },
+
+    "plugins": [
+    ]
+}

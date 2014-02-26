@@ -1,0 +1,29 @@
+{
+    "title": "The Deathliest Fighter",
+    "author": "Sean Monahan",
+    "date": "2013-04-14 09:00",
+    "template": "deathliest.jade",
+    "version": "Version 3.0",
+    "description": "Local multiplayer arena combat for 2 to 4 people on Mac and Windows.",
+
+    "headline": "<span>The</span> Deathliest Fighter",
+
+    "downloads": {
+
+        "headline": "Download Now For Mac and Windows",
+        "mac": "https://dl.dropboxusercontent.com/u/63411579/DeathliestFighter/latest/DeathliestFighter.dmg",
+        "win": "https://dl.dropboxusercontent.com/u/63411579/DeathliestFighter/latest/TheDeathliestFighter.exe"
+    },
+
+    "controls": {
+
+        "headline": "How To Play",
+
+        "padCopy": "Connect up to four gamepads to your Mac or PC.",
+        "gamepad": "gamepad-controls.jpg",
+
+        "keyboardCopy": "Up to two players can play on a single keyboard.",
+        "keyboard": "kb-controls.jpg"
+    }
+
+}

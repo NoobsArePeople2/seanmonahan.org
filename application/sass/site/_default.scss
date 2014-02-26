@@ -1,0 +1,683 @@
+*, *:before, *:after {
+  @include box-sizing(border-box);
+ }
+
+html,
+body {
+    @include font-clearsans;
+    color: $gray_dark;
+    margin: 0;
+}
+
+/////////////////////////////////////////////
+//
+// Sticky Footer
+//
+/////////////////////////////////////////////
+
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+html.flexbox,
+html.flexboxlegacy {
+
+  body {
+    height: auto;
+    min-height: 100vh;
+
+    @include flex-box;
+    @include flex-direction(column);
+  }
+
+}
+
+html.flexboxtweener {
+
+  height: 100%;
+
+  body {
+    height: 100%;
+    min-height: 100vh;
+
+    @include flex-box;
+    @include flex-direction(column);
+  }
+}
+
+#page-wrapper {
+  @include flex(1 0 auto);
+}
+
+// End Sticky Footer ////
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include font-adelle;
+}
+
+.full-width {
+  padding: 0 $column;
+}
+
+hr {
+  height: 1px;
+  width: 100%;
+  background: $gray_dark;
+  border: 0;
+  @include opacity(0.15);
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+  @include transition(all 0.25s ease-out);
+
+  &:hover {
+    color: $pink;
+    @include transition(all 0.25s ease-out);
+  }
+}
+
+/////////////////////////////////////////////
+//
+// Nav
+//
+/////////////////////////////////////////////
+
+nav {
+
+  height: pixel-to-em(80, 16);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.95);
+  z-index: 9999;
+
+  #logo {
+    @include font-adelle;
+    font-size: pixel-to-em(30, 16);
+    color: $blue;
+    display: block;
+    float: left;
+    line-height: pixel-to-em(80, 30);
+    z-index: 9999;
+  }
+
+  #mobile-menu {
+    background: #ffffff;
+    position: relative;
+    display: block;
+    float: right;
+    width: pixel-to-em(45, 16);
+    height: pixel-to-em(45, 16);
+    margin-top: pixel-to-em(17, 16);
+    cursor: pointer;
+    @include transition(all 0.25s ease-out);
+    z-index: 9999;
+
+    .bar {
+      position: absolute;
+      display: block;
+      background: $blue;
+      @include transition(all 0.25s ease-out);
+      width: 100%;
+
+      &.top {
+        top: 0;
+        height: pixel-to-em(9, 16);
+      }
+
+      &.mid {
+        top: pixel-to-em(18, 16);
+        height: pixel-to-em(9, 16);
+      }
+
+      &.bot {
+        bottom: 0;
+        height: pixel-to-em(9, 16);
+      }
+    }
+
+    &:hover {
+      .bar {
+        background: $pink;
+      }
+    }
+
+    &.active {
+
+      @include transform(rotate(-90deg));
+
+      .bar {
+
+        &.top {
+          top: pixel-to-em(15, 16);
+        }
+
+        &.mid {
+          // margin: pixel-to-em(0, 16) 0;
+        }
+
+        &.bot {
+          bottom: pixel-to-em(15, 16);
+        }
+      }
+    }
+  }
+
+  ul {
+
+    visibility: hidden;
+    @include opacity(0);
+    position: fixed;
+    top: pixel-to-em(71, 16);
+    left: 0;
+    right: 0;
+    font-size: pixel-to-em(18, 16);
+    list-style: none;
+    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.95);
+    @include transition(all 0.25s ease-out);
+
+    li {
+      width: 100%;
+      display: block;
+      float: left;
+      text-align: center;
+      margin-right: pixel-to-em(0, 18);
+      border-bottom: pixel-to-em(1, 16) solid adjust-lightness($blue, 30%);
+
+      margin-top: pixel-to-em(-40, 16);
+      @include transition(all 0.25s ease-out);
+      @include opacity(0);
+
+      a {
+        display: block;
+        line-height: pixel-to-em(80, 18);
+      }
+    }
+
+    &.active {
+
+      visibility: visible;
+      @include opacity(1);
+
+      li {
+        margin-top: pixel-to-em(0, 16);
+        @include opacity(1);
+
+
+        @for $i from 1 through 5 {
+          &:nth-child(#{$i}) {
+            @include transition-delay(#{(0.075*($i - 1))}s);
+          }
+        }
+      }
+    }
+
+    &.no-transition {
+
+      @include transition(none !important);
+
+      li {
+        @include transition(none !important);
+      }
+    }
+  }
+}
+
+body {
+  padding-top: pixel-to-em(80, 16);
+}
+
+/////////////////////////////////////////////
+//
+// Home
+//
+/////////////////////////////////////////////
+
+#home {
+  .home-wrapper {
+
+    // margin-top: pixel-to-em(80, 16);
+    padding-top: pixel-to-em(20, 16);
+    text-align: center;
+    position: relative;
+
+    img {
+      width: 90%;
+      margin-left: 5%;
+      margin-right: 5%;
+      float: none;
+      height: auto;
+    }
+
+    #intro {
+      background-color: rgba(255, 255, 255, 0.9);
+      float: none;
+
+      position: absolute;
+      bottom: pixel-to-em(-140, 16);
+      z-index: 100;
+
+      h1 {
+        color: $gray;
+        margin-top: pixel-to-em(16, 26);
+        margin-bottom: pixel-to-em(16, 26);
+      }
+
+      #contact-wrapper {
+        left: 0;
+        bottom: 0;
+
+        h2 {
+          margin-bottom: 0;
+        }
+
+        ul {
+          list-style: none;
+
+          li {
+            display: inline-block;
+            margin-right: pixel-to-em(16, 16);
+
+            &:first-child {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/////////////////////////////////////////////
+//
+// Content
+//
+/////////////////////////////////////////////
+
+.content {
+  margin-top: pixel-to-em(60, 16);
+
+  .vid-wrapper {
+    position: relative;
+    padding-bottom: 56%;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  ul {
+    list-style-type: square;
+    margin-left: pixel-to-em(30, 16);
+    margin-bottom: pixel-to-em(30, 16);
+  }
+}
+
+/////////////////////////////////////////////
+//
+// Footer
+//
+/////////////////////////////////////////////
+
+#footer {
+  text-align: center;
+  margin-top: pixel-to-em(40, 16);
+  padding-top: pixel-to-em(20, 16);
+  padding-bottom: pixel-to-em(20, 16);
+
+  .copyright {
+    display: block;
+  }
+
+  ul {
+    list-style: none;
+    display: inline;
+
+    li {
+      display: inline-block;
+      padding-left: pixel-to-em(4, 16);
+      padding-right: pixel-to-em(4, 16);
+
+      &:first-child {
+        display: block;
+      }
+    }
+  }
+}
+
+/////////////////////////////////////////////
+//
+// Contact
+//
+/////////////////////////////////////////////
+
+#contact {
+
+  h1 {
+    margin-bottom: 0;
+  }
+
+  p {
+    margin-bottom: pixel-to-em(32, 16);
+  }
+
+  text-align: center;
+
+  #contact-form {
+    width: 100%;
+  }
+
+}
+
+/////////////////////////////////////////////
+//
+// Work
+//
+/////////////////////////////////////////////
+
+#work {
+
+  h1 {
+    margin-bottom: 0;
+  }
+
+  p {
+    margin-bottom: pixel-to-em(32, 16);
+  }
+
+  text-align: center;
+
+  .work-item {
+    $itemSize: 280;
+    display: inline-block;
+    width: pixel-to-em($itemSize, 16);
+    height: pixel-to-em($itemSize, 16);
+
+    margin: pixel-to-em(20, 16) 0;
+
+    @include border-radius(pixel-to-em(6, 16));
+    // @include gpu;
+
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+
+    &.deathliest-fighter {
+      background: url('../images/work/splash/deathliest.png') center center no-repeat;
+      background-size: #{$itemSize}px #{$itemSize}px;
+    }
+
+    &.airpad {
+      background: url('../images/work/splash/airpad.jpg') center center no-repeat;
+      background-size: #{$itemSize}px #{$itemSize}px;
+    }
+
+    &.shibashiba {
+      background: url('../images/work/splash/shiba.jpg') center center no-repeat;
+      background-size: #{$itemSize}px #{$itemSize}px;
+    }
+
+    &.elastic-suite {
+      background: url('../images/work/splash/elastic.jpg') center center no-repeat;
+      background-size: #{$itemSize}px #{$itemSize}px;
+    }
+
+    &.beat-boost {
+      background: url('../images/work/splash/beat-boost.jpg') center center no-repeat;
+      background-size: #{$itemSize}px #{$itemSize}px;
+    }
+
+    &.framed {
+      background: url('../images/work/splash/framed.jpg') center center no-repeat;
+      background-size: #{$itemSize}px #{$itemSize}px;
+    }
+
+    &.gnipgnop {
+      background: url('../images/work/splash/gnipgnop.jpg') center center no-repeat;
+      background-size: #{$itemSize}px #{$itemSize}px;
+    }
+
+    &.zombie-playground {
+      background: url('../images/work/splash/zpg.jpg') center center no-repeat;
+      background-size: #{$itemSize}px #{$itemSize}px;
+    }
+
+    &.vip-nation {
+      background: url('../images/work/splash/vipnation.jpg') center center no-repeat;
+      background-size: #{$itemSize}px #{$itemSize}px;
+    }
+
+    .title {
+      background-color: rgba($blue, 0.85);
+      position: absolute;
+      top: pixel-to-em(($itemSize - 80), 16);
+      width: pixel-to-em($itemSize, 16);
+      height: pixel-to-em($itemSize, 16);
+      @include transition(all 0.25s ease-out);
+      // @include gpu;
+
+      h3 {
+        color: #ffffff;
+        font-size: pixel-to-em(22, 16);
+        margin: 0;
+        padding: pixel-to-em(24, 22) pixel-to-em(8, 22) 0 pixel-to-em(8, 22);
+      }
+    }
+
+    .blurb {
+      background-color: rgba($blue_dark, 0.5);
+      position: absolute;
+      top: pixel-to-em($itemSize, 16);
+      width: pixel-to-em($itemSize, 16);
+      height: pixel-to-em($itemSize, 16);
+
+      padding: pixel-to-em(4, 22) pixel-to-em(8, 22) 0 pixel-to-em(8, 22);
+
+      @include transition(all 0.25s ease-out);
+      // @include gpu;
+
+      p {
+        color: #ffffff;
+        font-size: pixel-to-em(16, 16);
+        // line-height: pixel-to-em(18, 14);
+      }
+    }
+
+    .link {
+      background-color: rgba(#ffffff, 0.95);
+      position: absolute;
+      top: pixel-to-em($itemSize, 16);
+      width: pixel-to-em($itemSize, 16);
+      height: pixel-to-em($itemSize, 16);
+
+      padding: pixel-to-em(8, 22) pixel-to-em(8, 22) 0 pixel-to-em(8, 22);
+
+      @include transition(all 0.25s ease-out);
+      // @include gpu;
+
+      span {
+        color: $blue;
+
+        &:hover {
+          color: $pink;
+        }
+      }
+    }
+
+
+    &:hover {
+
+      .title {
+        top: 0;
+        @include transition(all 0.25s ease-out);
+      }
+
+      .blurb {
+        top: 80px;
+        @include transition(all 0.25s ease-out);
+        @include transition-delay(0.1s);
+      }
+
+      .link {
+        top: #{($itemSize - 40)}px;
+        @include transition(all 0.25s ease-out);
+        @include transition-delay(0.2s);
+      }
+    }
+  }
+}
+
+/////////////////////////////////////////////
+//
+// Posts
+//
+/////////////////////////////////////////////
+
+#post-header,
+#post {
+
+  &.full-width {
+    padding-right: $column*1;
+    padding-left: $column*1;
+  }
+}
+
+#post-header {
+
+  &.beat-boost {
+    background: url('../images/work/beat-boost/header.png') center center;
+    @include background-size(cover);
+    height: pixel-to-em(160, 16);
+
+    h1 {
+      padding-top: pixel-to-em(100, 42);
+
+      span {
+        display: block;
+      }
+    }
+  }
+
+  &.elastic-suite {
+    background: url('../images/work/elastic/header.jpg') center center;
+    @include background-size(cover);
+    height: pixel-to-em(160, 16);
+
+    h1 {
+      padding-top: pixel-to-em(200, 42);
+    }
+  }
+
+  &.gnipgnop {
+    background: url('../images/work/gnipgnop/header.jpg') center center;
+    @include background-size(cover);
+    height: pixel-to-em(160, 16);
+
+    h1 {
+      padding-top: pixel-to-em(200, 42);
+    }
+  }
+
+  h1 {
+    margin: 0;
+  }
+}
+
+#post {
+
+  h2 {
+    margin-bottom: pixel-to-em(10, 26);
+  }
+
+  p {
+    font-size: pixel-to-em(18, 16);
+    line-height: pixel-to-em(30, 18);
+    margin-bottom: pixel-to-em(24, 18);
+  }
+
+  ul {
+    font-size: pixel-to-em(18, 16);
+    line-height: pixel-to-em(30, 18);
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-top: pixel-to-em(16, 16);
+    padding-bottom: pixel-to-em(16, 16);
+  }
+
+  &.content {
+    margin-top: pixel-to-em(40, 16);
+  }
+}
+
+/////////////////////////////////////////////
+//
+// The Deathliest Fighter
+//
+/////////////////////////////////////////////
+
+#deathliest-fighter {
+
+  h1 {
+    margin-bottom: 0;
+
+    span {
+      display: block;
+    }
+  }
+
+  p {
+    margin-bottom: pixel-to-em(32, 16);
+  }
+
+  text-align: center;
+
+  .top-downloads {
+    margin-bottom: pixel-to-em(30, 16);
+  }
+
+  .download {
+    float: none;
+    width: 100%;
+  }
+
+  .controls-section {
+
+    margin-top: pixel-to-em(50, 16);
+
+    .controls {
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+}

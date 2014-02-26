@@ -1,0 +1,12 @@
+/* TEAM */
+Name: Sean Monahan
+Role: Developer, designer
+Site: seanmonahan.org
+Twitter: @NoobsArePeople2
+Github: https://github.com/NoobsArePeople2
+Location: Seattle, WA
+
+/* SITE */
+Standards: HTML5, CSS
+Components: jQuery, Modernizer, Golden Grid System, TypeKit
+Software: SASS/Compass, CoffeeScript, jQuery, Modernizer, Gulp, Wintersmith, Jade, Markdown, NodeJS, Sublime Text

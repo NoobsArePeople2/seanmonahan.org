@@ -1,0 +1,21 @@
+extends base
+
+include mixins/work-item
+
+block prepend title
+  | #{ page.metadata.title } |&nbsp;
+
+block content
+  - var cssClass = (page.metadata.cssClass) ? page.metadata.cssClass : page.metadata.title;
+  - cssClass = cssClass.replace(' ', '-').toLowerCase();
+  if page.metadata.header && page.metadata.headerCopy
+    div(id="post-header", class=cssClass).full-width
+      h1!= page.metadata.headerCopy
+
+  div(id="post", class=cssClass).content.full-width.clearfix
+
+
+    != page.html
+
+block footer
+  include partials/footer

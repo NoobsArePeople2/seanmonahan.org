@@ -1,17 +1,28 @@
 {
-  "name": "seanmonahan.org",
-  "version": "3.0.0",
-  "description": "Website for Sean Monahan",
-  "dependencies": {
-    "wintersmith": "~1.2.2",
-    "wintersmith-less": "~0.1.0",
-    "wintersmith-kelvin": "~0.0.6",
-    "less": "~1.3.3"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": "",
-  "author": "Sean Monahan",
-  "license": "MIT"
+    "name": "seanmonahan.org",
+    "version": "4.0.0",
+    "description": "Website for Sean Monahan",
+    "devDependencies": {
+        "wintersmith": "~2.0.0",
+        "gulp": "~3.5.6",
+        "gulp-clean": "~0.2.4",
+        "gulp-coffee": "~1.4.1",
+        "gulp-compass": "~1.1.7",
+        "gulp-concat": "~2.2.0",
+        "gulp-minify-css": "~0.3.0",
+        "gulp-plumber": "~0.6.1",
+        "gulp-rename": "~1.2.0",
+        "gulp-uglify": "~0.2.1",
+        "gulp-util": "~2.2.14",
+        "run-sequence": "~0.3.6"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "https://github.com/NoobsArePeople2/seanmonahan.org.git"
+    },
+    "author": "Sean Monahan",
+    "license": "MIT"
 }

@@ -1,0 +1,18 @@
+extends base
+
+include mixins/work-item
+
+block prepend title
+  | #{ page.metadata.title } |&nbsp;
+
+block content
+  div(id="work").content.full-width.clearfix
+
+    h1= page.metadata.headline
+    p= page.metadata.copy
+
+    - each item in page.metadata.items
+      +workItem(item)
+
+block footer
+  include partials/footer

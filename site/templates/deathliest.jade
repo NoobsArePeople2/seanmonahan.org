@@ -1,0 +1,40 @@
+extends base
+
+include mixins/fancy-button
+include mixins/youtube-embed
+
+block prepend title
+  | #{ page.metadata.title } |&nbsp;
+
+block content
+  div(id="deathliest-fighter").content.full-width.clearfix
+
+    h1!= page.metadata.headline
+    p= page.metadata.description
+
+    .clearfix.top-downloads
+      .download.left
+        +fancyButton("Download for Mac OSX", page.metadata.downloads.mac)
+      .download.right
+        +fancyButton("Download for Windows", page.metadata.downloads.win)
+
+    +youtubeEmbed("ICfH4U_edhQ")
+
+    .clearfix.controls-section
+      h1!= page.metadata.controls.headline
+      .controls.left
+        h2= page.metadata.controls.padCopy
+        img(src=page.metadata.controls.gamepad)
+      .controls.right
+        h2= page.metadata.controls.keyboardCopy
+        img(src=page.metadata.controls.keyboard)
+
+    .bottom-downloads
+      h1!= page.metadata.downloads.headline
+      .download.left
+        +fancyButton("Download for Mac OSX", page.metadata.downloads.mac)
+      .download.right
+        +fancyButton("Download for Windows", page.metadata.downloads.win)
+
+block footer
+  include partials/footer

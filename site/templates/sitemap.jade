@@ -1,0 +1,76 @@
+doctype xml
+urlset(
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance",
+  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd",
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9")
+  - var buildDate = new Date().toISOString()
+  url
+    loc= locals.url
+    lastmod= buildDate
+    changefreq daily
+    priority 1.0
+  url
+    loc= locals.url + "/about"
+    lastmod= buildDate
+    changefreq daily
+    priority 1.0
+  url
+    loc= locals.url + "/contact"
+    lastmod= buildDate
+    changefreq daily
+    priority 0.9
+  //- Work
+  url
+    loc= locals.url + "/work/"
+    lastmod= buildDate
+    changefreq daily
+    priority 1.0
+  - var items = _.chain(contents.work._.directories).map(function(item) {
+  -   return item.index
+  - }).compact().filter(function(item) {
+  -   return item.metadata.ignored !== true
+  - }).sortBy(function(item) {
+  -   return -item.date
+  - }).value()
+  for item in items
+    - var permalink = locals.url + item.url
+    url
+      loc= permalink
+      lastmod= item.date.toISOString()
+      changefreq daily
+      priority 0.8
+  //- Games
+  - var items = _.chain(contents.games._.directories).map(function(item) {
+  -   return item.index
+  - }).compact().filter(function(item) {
+  -   if (!item.metadata) return false;
+  -   return item.metadata.ignored !== true
+  - }).sortBy(function(item) {
+  -   return -item.date
+  - }).value()
+  for item in items
+    - var permalink = locals.url + item.url
+    url
+      loc= permalink
+      lastmod= item.date.toISOString()
+      changefreq daily
+      priority 0.8
+  //- url
+  //-   loc= locals.url + "/blog/"
+  //-   lastmod= buildDate
+  //-   changefreq daily
+  //-   priority 1.0
+  //- - var articles = _.chain(contents.blog._.directories).map(function(item) {
+  //- -   return item.index
+  //- - }).compact().filter(function(article) {
+  //- -   return article.metadata.ignored !== true
+  //- - }).sortBy(function(item) {
+  //- -   return -item.date
+  //- - }).value()
+  //- for article in articles
+  //-   - var permalink = locals.url + article.url
+  //-   url
+  //-     loc= permalink
+  //-     lastmod= article.date.toISOString()
+  //-     changefreq daily
+  //-     priority 0.8

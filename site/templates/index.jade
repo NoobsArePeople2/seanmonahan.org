@@ -1,0 +1,24 @@
+extends base
+
+block title
+  | #{ page.metadata.title }
+
+block content
+  div(id="home").full-width
+    div.home-wrapper.clearfix
+      img(src="/assets/images/sean@2x.png")
+      div(id="intro", itemscope, itemtype="http://schema.org/Person")
+        h1 Hi, my name is <span itemprop="name">Sean</span>.
+        p.
+          I'm a <span itemprop="jobTitle">developer</span> living and working in Seattle, WA. I make games, apps and websites for desktop and mobile.
+        div(id="contact-wrapper")
+          h2.
+            Get in touch.
+          hr
+          ul
+            li.
+              <a href="mailto:#{locals.email}" itemprop="email">#{locals.email}</a>
+            li.
+              <a href="#{twitter_url}">twitter</a>
+            li.
+              <a href="#{github_url}">github</a>

@@ -1,0 +1,77 @@
+{
+    "title": "Work",
+    "author": "Sean Monahan",
+    "date": "2013-02-01 09:00",
+    "template": "work.jade",
+    "version": "Version 3.0",
+    "description": "A selection of projects Sean has worked on.",
+
+    "headline": "A selection of projects I've been involed with.",
+    "copy": "From desktop applications, to mobile games and experiments these are the projects I'm particularly fond of.",
+
+    "notyet": [
+        {
+            "title": "Deathliest Fighter",
+            "blurb": "Local multiplayer arena combat for 2 to 4 people on Mac and Windows.",
+            "link": "/games/deathliest-fighter",
+            "linkText": "Download the Game"
+        }
+    ],
+
+    "items": [
+
+        {
+            "title": "Shibashiba",
+            "blurb": "Take control of three shibas for 40 levels of running, jumping, sliding and dashing action.",
+            "link": "http://shibashibagame.com/",
+            "linkText": "Visit Site + Download Game"
+        },
+
+        {
+            "title": "Zombie Playground",
+            "blurb": "Website and forum design and development for the 3D action, online battle RPG.",
+            "link": "http://zombieplaygroundgame.com/",
+            "linkText": "Visit Site"
+        },
+
+        {
+            "title": "Elastic Suite",
+            "blurb": "A collection of custom branded tools for business-to-business sales.",
+            "link": "/work/elastic-suite"
+        },
+
+        {
+            "title": "Beat Boost",
+            "blurb": "Ride waves across levels directly generated from the music.",
+            "link": "/games/beat-boost",
+            "linkText": "Play Beat Boost"
+        },
+
+        {
+            "title": "GnipGnop",
+            "blurb": "An experiment in creating a browser-based, multi-device networked multiplayer game that runs off a single code base on client and server.",
+            "link": "/work/gnipgnop"
+        },
+
+        {
+            "title": "AIRPad",
+            "blurb": "Standardized gamepad API for Mac and Windows.",
+            "link": "https://github.com/NoobsArePeople2/AIRPad",
+            "linkText": "Fork on Github"
+        },
+
+        {
+            "title": "Framed",
+            "blurb": "An Actionscript library for exporting MovieClips and the Flash Stage to PNG sequences for games and other applications.",
+            "link": "/work/framed"
+        },
+
+        {
+            "title": "VIP Nation",
+            "blurb": "Premium concert ticket packages and experiences.",
+            "link": "https://vipnation.com/",
+            "linkText": "Visit Site"
+        }
+
+    ]
+}

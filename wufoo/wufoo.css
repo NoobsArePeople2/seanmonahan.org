@@ -1,0 +1,115 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#header {
+    display: none;
+}
+
+/*.wufoo ul {
+    max-width: 600px;
+}*/
+
+.wufoo ul li {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.wufoo li.focused {
+    background-color: #ffffff;
+}
+
+.wufoo li.buttons {
+    text-align: center;
+}
+
+textarea,
+input,
+button,
+*:focus {
+    outline: 0;
+}
+
+.wufoo label.desc {
+    font-size: 120%;
+}
+
+input.text,
+textarea.textarea {
+    background: #ffffff;
+    height: 44px;
+    border: 1px solid #aaaaaa;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    border-radius: 6px;
+    padding: 8px;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+    -webkit-appearance: none;
+}
+
+textarea.textarea {
+    height: auto;
+    overflow: auto;
+    min-width: auto;
+    max-width: auto;
+    width: 100%;
+}
+
+.wufoo li.focused input.text,
+.wufoo li.focused textarea.textarea {
+    border-color: #40C1FF;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+}
+
+.wufoo input.btTxt {
+    color: #ffffff;
+    background-color: #40C1FF;
+    padding: 16px 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 0;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+    display: block;
+    width: 100%;
+    -webkit-appearance: none;
+}
+
+.wufoo input.btTxt:hover {
+    background-color: #FF3777;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+}
+
+.wufoo input.btTxt {
+    padding: 8px 16px;
+    display: inline;
+    width: auto;
+}
+
+@media screen and (max-width: 40em) {
+    .wufoo input.btTxt {
+        padding: 16px 16px;
+        display: block;
+        width: 100%;
+    }
+}

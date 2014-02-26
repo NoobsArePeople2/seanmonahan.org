@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /harm/humans
+Disallow: /ignore/humans
+Disallow: /harm/self
+
+Disallow: /harm/humanity

@@ -1,0 +1,24 @@
+extends base
+
+include mixins/work-item
+
+block prepend title
+  | #{ page.metadata.title } |&nbsp;
+
+block content
+  div(id="post", class=cssClass).content.full-width.clearfix
+    != page.html
+
+    ul
+      li.
+        <a href="#{twitter_url}">Twitter</a>
+      li.
+        <a href="#{github_url}">Github</a>
+      li.
+        <a href="#{steam_url}">Steam</a>
+      li.
+        <a href="#{linkedin_url}">LinkedIn</a>
+
+
+block footer
+  include partials/footer

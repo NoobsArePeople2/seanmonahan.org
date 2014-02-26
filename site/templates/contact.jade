@@ -1,0 +1,18 @@
+extends base
+
+block prepend title
+  | #{ page.metadata.title } |&nbsp;
+
+block content
+  div(id="contact").full-width
+    div.content
+      h1.
+        Say "Hi"
+      p.
+        Contact me directly by sending an email to <a href="mailto:#{locals.email}?subject=Hi, Sean">#{locals.email}</a>. <br>
+        Or, if you prefer, fill out the form below. In either case I'll get back to you as soon as I can.
+      div(id="contact-form")
+        <iframe height="437" allowTransparency="true" frameborder="0" scrolling="no" style="width:100%;border:none"  src="http://spmonahan.wufoo.com/embed/zlgvr5212benoa/"><a href="https://spmonahan.wufoo.com/forms/zlgvr5212benoa/">Fill out my Wufoo form!</a></iframe>
+
+block footer
+  include partials/footer

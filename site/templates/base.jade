@@ -1,0 +1,47 @@
+doctype html
+<!--[if lt IE 8]>
+<html class="ie ie6" lang="en">
+<![endif]-->
+<!--[if IE 7]>
+<html class="ie ie7" lang="en">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en">
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+head
+  block head
+    meta(charset="utf-8")
+    title
+      block title
+        = locals.name
+    meta(name="description", content="#{page.metadata.description}")
+    meta(name="author", content="#{locals.name}")
+    link(rel="author", href="/humans.txt")
+    meta(name="viewport", content="width=device-width,initial-scale=1")
+
+    <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    block css
+      include partials/css
+
+    include partials/typekit-js
+
+    include partials/favicons
+
+  - var page_name = page.title.toLowerCase().replace(' ', '-');
+  body(class="#{page_name}")
+    block header
+    block nav
+      include partials/navigation
+    #page-wrapper
+      block content
+    footer.wrapper(id="footer")
+      block footer
+
+    include partials/ga
+    block js
+      include partials/js

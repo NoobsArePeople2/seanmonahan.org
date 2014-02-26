@@ -1,4 +1,6 @@
-assets/
+application/.sass-cache/
+application/build/
+./assets/
 build/
 default/
 design/

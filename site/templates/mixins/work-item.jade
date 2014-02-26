@@ -1,0 +1,10 @@
+mixin workItem(item)
+  - var cssClass = item.title.replace(' ', '-').toLowerCase();
+  - item.linkText = item.linkText || "Read More"
+    a(href=item.link, class=cssClass).work-item
+      .title
+        h3= item.title
+      .blurb
+        p= item.blurb
+      .link
+        span= item.linkText
