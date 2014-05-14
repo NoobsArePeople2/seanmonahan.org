@@ -1,5 +1,5 @@
 mixin workItem(item)
-  - var cssClass = item.title.replace(' ', '-').toLowerCase();
+  - var cssClass = item.title.replace(/\s/g, '-').toLowerCase();
   - item.linkText = item.linkText || "Read More"
     a(href=item.link, class=cssClass).work-item
       .title

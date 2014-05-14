@@ -467,6 +467,11 @@ body {
       background-size: #{$itemSize}px #{$itemSize}px;
     }
 
+    &.walk-in-our-shoes {
+      background: url('../images/work/splash/walk-in-our-shoes.png') center center no-repeat;
+      background-size: #{$itemSize}px #{$itemSize}px;
+    }
+
     .title {
       background-color: rgba($blue, 0.85);
       position: absolute;
@@ -597,6 +602,17 @@ body {
       padding-top: pixel-to-em(200, 42);
     }
   }
+
+  &.walk-in-our-shoes {
+    background: url('../images/work/walk-in-our-shoes/header.jpg') center center;
+    @include background-size(cover);
+    height: pixel-to-em(260, 16);
+
+    h1 {
+      padding-top: pixel-to-em(200, 42);
+    }
+  }
+
 
   h1 {
     margin: 0;

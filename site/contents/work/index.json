@@ -21,6 +21,12 @@
     "items": [
 
         {
+            "title": "Walk In Our Shoes",
+            "blurb": "Discover mental health and how to give and get help.",
+            "link": "/work/walk-in-our-shoes"
+        },
+
+        {
             "title": "Shibashiba",
             "blurb": "Take control of three shibas for 40 levels of running, jumping, sliding and dashing action.",
             "link": "http://shibashibagame.com/",
