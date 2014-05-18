@@ -71,12 +71,12 @@ header {
  * Media Queries
  * ========================================================
  */
-#mquery-media:after {
+#mq-media:after {
   content: "default";
 }
 
 @media only screen and (min-width:320px) {
-  #mquery-media:after {
+  #mq-media:after {
     content: "min-width: 320px";
   }
 
@@ -87,7 +87,7 @@ header {
 }
 
 @media only screen and (min-width:460px) {
-  #mquery-media:after {
+  #mq-media:after {
     content: "min-width: 460px";
   }
 
@@ -102,7 +102,7 @@ header {
 }
 
 @media only screen and (min-width:768px) {
-  #mquery-media:after {
+  #mq-media:after {
     content: "min-width: 768px";
   }
 

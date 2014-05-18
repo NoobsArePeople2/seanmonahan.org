@@ -1,8 +1,8 @@
 /**
- * mQuery.
+ * mq.js.
  *
  * @fileOverview A helper for styling responsive pages.
- * @author <a href="mailto:sean@seanmonahan.org?subject=mQuery">Sean Monahan</a>
+ * @author <a href="mailto:sean@seanmonahan.org?subject=mq.js">Sean Monahan</a>
  * @version 0.1.0
  */
 (function() {
@@ -13,7 +13,7 @@ function browserSupportsMediaQueries() {
 
   var supported = false;
   var div = document.createElement('div');
-  div.className = 'mquery-test';
+  div.className = 'mq-test';
   document.body.appendChild(div);
   if (window.getComputedStyle && window.getComputedStyle(div).position === 'absolute') {
     supported = true;
@@ -40,13 +40,13 @@ function onLoad() {
   var body = document.body;
   if (body) {
     var q = document.createElement('div');
-    q.id = 'mquery';
+    q.id = 'mq';
     body.appendChild(q);
 
     if (browserSupportsMediaQueries()) {
 
       var media = document.createElement('span');
-      media.id = 'mquery-media';
+      media.id = 'mq-media';
 
       var media_label = document.createElement('span');
       media_label.innerHTML = '[Media Query]: ';
@@ -61,7 +61,7 @@ function onLoad() {
       size_wrapper.appendChild(size_label);
 
       var size = document.createElement('span');
-      size.id = 'mquery-size';
+      size.id = 'mq-size';
       size_wrapper.appendChild(size);
 
       q.appendChild(size_wrapper);
@@ -94,7 +94,7 @@ function getWindowSize() {
 ///////////////////////////////////////////////////////////
 function onResize() {
 
-  var qs = document.getElementById('mquery-size');
+  var qs = document.getElementById('mq-size');
   if (qs === null) return;
 
   var size = getWindowSize();

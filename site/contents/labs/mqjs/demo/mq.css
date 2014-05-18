@@ -1,11 +1,11 @@
 /**
- * mQuery: a helper for styling responsive pages.
+ * mq: a helper for styling responsive pages.
  *
- * @file mquery.css
+ * @file mq.css
  * @author Sean Monahan <sean@seanmonahan.org>
  */
 
-#mquery {
+#mq {
   font-family: sans-serif;
   background: #000;
   background: rgba(0, 0, 0, 0.5);
@@ -22,35 +22,35 @@
   line-height: 30px;
 }
 
-#mquery > span {
+#mq > span {
   margin-right: 15px;
   display: inline-block;
 }
 
-#mquery > span span:first-child {
+#mq > span span:first-child {
   font-weight: bold;
 }
 
 @media all and (min-width:1px) {
-  .mquery-test {
+  .mq-test {
     position:absolute
   }
 }
 
 @media only screen and (max-width:310px) {
-  #mquery > span span:first-child {
+  #mq > span span:first-child {
     display: block;
   }
 }
 
 @media only screen and (max-width:540px) {
-  #mquery > span {
+  #mq > span {
     display: block;
   }
 }
 
 @media only screen and (min-width:541px) {
-  #mquery > span {
+  #mq > span {
     display: inline;
   }
 }
