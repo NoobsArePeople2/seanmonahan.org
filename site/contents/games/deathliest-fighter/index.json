@@ -12,8 +12,10 @@
 
         "headline": "Download Now For Mac and Windows",
         "mac": "https://dl.dropboxusercontent.com/u/63411579/DeathliestFighter/latest/DeathliestFighter.dmg",
-        "win": "https://dl.dropboxusercontent.com/u/63411579/DeathliestFighter/latest/TheDeathliestFighter.exe"
+        "win": "https://dl.dropboxusercontent.com/u/63411579/DeathliestFighter/latest/TheDeathliestFighter.zip"
     },
+
+    "splash": "splash.png",
 
     "controls": {
 

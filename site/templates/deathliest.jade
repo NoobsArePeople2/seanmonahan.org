@@ -18,7 +18,8 @@ block content
       .download.right
         +fancyButton("Download for Windows", page.metadata.downloads.win)
 
-    +youtubeEmbed("ICfH4U_edhQ")
+    //- +youtubeEmbed("ICfH4U_edhQ")
+    img(src=page.metadata.splash, style="max-width:100%;height:auto;")
 
     .clearfix.controls-section
       h1!= page.metadata.controls.headline

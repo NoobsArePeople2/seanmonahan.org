@@ -9,21 +9,19 @@
     "headline": "A selection of projects I've been involed with.",
     "copy": "From desktop applications, to mobile games and experiments these are the projects I'm particularly fond of.",
 
-    "notyet": [
-        {
-            "title": "Deathliest Fighter",
-            "blurb": "Local multiplayer arena combat for 2 to 4 people on Mac and Windows.",
-            "link": "/games/deathliest-fighter",
-            "linkText": "Download the Game"
-        }
-    ],
-
     "items": [
 
         {
             "title": "Walk In Our Shoes",
             "blurb": "Discover mental health and how to give and get help.",
             "link": "/work/walk-in-our-shoes"
+        },
+
+        {
+            "title": "Deathliest Fighter",
+            "blurb": "Local multiplayer arena combat for 2 to 4 people on Mac and Windows.",
+            "link": "/games/deathliest-fighter",
+            "linkText": "Download the Game"
         },
 
         {
