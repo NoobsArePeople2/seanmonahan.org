@@ -1,0 +1,33 @@
+extends base
+
+block prepend title
+  | Blog Archive |&nbsp;
+
+block content
+  section(id="blog-archive").content.full-width
+    h1 Blog Archive
+    p Posts about things that interest me.
+    - var archive = _.chain(contents.blog._.directories).map(function(item) {
+    -   return item.index
+    - }).compact().sortBy(function(item) {
+    -   return -item.date
+    - }).groupBy(function(item) {
+    -   return item.date.getFullYear()
+    - }).value()
+    - var map = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+
+    section.archive
+      ul.year
+        each year in _.chain(archive).keys().reverse().value()
+          li
+            h2= year
+            - var months = _.groupBy(archive[year], function(item) { return map[item.date.getMonth()] })
+            ul.month
+              each articles, month in months
+                li
+                  h3= month
+                  ul.posts
+                    each article in articles
+                      li
+                        a(href=article.url)
+                          =article.title

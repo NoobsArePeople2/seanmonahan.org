@@ -1,12 +1,10 @@
 extends base
 
-include mixins/work-item
-
 block prepend title
   | #{ page.metadata.title } |&nbsp;
 
 block content
-  div(id="post", class=cssClass).content.full-width.clearfix
+  div(id="post").content.full-width.clearfix
     != page.html
 
     ul

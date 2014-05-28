@@ -1,5 +1,5 @@
 ---
-title: mq.js, a Javascript utility for build responsive web things.
+title: mq.js, a Javascript utility for building responsive web things.
 author: Sean Monahan
 template: post.jade
 description: A zero-dependency utility for building responsive web things.

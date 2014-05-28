@@ -554,6 +554,54 @@ body {
 
 /////////////////////////////////////////////
 //
+// Blog
+//
+/////////////////////////////////////////////
+
+#blog-archive {
+
+  h1 {
+    margin-bottom: 0;
+  }
+
+  p {
+    margin-bottom: pixel-to-em(32, 16);
+  }
+
+  text-align: center;
+
+  .archive {
+    text-align: left;
+  }
+
+  .year {
+
+    list-style: none;
+    margin-left: 0;
+
+    h2 {
+      margin-bottom: 0;
+    }
+  }
+
+  .month {
+
+    list-style: none;
+    margin-left: pixel-to-em(8, 16);
+
+    h3 {
+      margin: pixel-to-em(8, 16) 0;
+    }
+  }
+
+  &.full-width {
+    padding-right: $column*1;
+    padding-left: $column*1;
+  }
+}
+
+/////////////////////////////////////////////
+//
 // Posts
 //
 /////////////////////////////////////////////
