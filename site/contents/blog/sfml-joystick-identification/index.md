@@ -6,7 +6,7 @@ description: A quick guide to using the new APIs on the SFML Joystick class.
 date: 2014-03-05
 ---
 
-### Identify Joysticks with SFML
+## Identify Joysticks with SFML
 
 This post will discuss using the new API on the `sf::Joystick` class that enables you to uniquely identify a connected joystick. This is exicting as it allows you to detect specific controllers and provide sane defaults for button mappings. If that doesn't mean anything to you I discuss the problem more in [this post](/blog/sfml-gamepad-test).
 

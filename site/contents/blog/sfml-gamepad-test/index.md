@@ -6,9 +6,9 @@ description: A simple testbed application for gamepads in SFML. Useful for mappi
 date: 2013-09-25
 ---
 
-### SFML Gamepad Test
+## SFML Gamepad Test
 
-#### *A simple testbed application for gamepads in SFML*
+### *A simple testbed application for gamepads in SFML*
 
 <br/>
 Early this year I started using [SFML](http://sfml-dev.org/) as I wanted to dip my toes into game development with C++. I picked it over SDL and other popular C++ frameworks because it had a clean, object-oriented API that I felt comfortable with coming from an AS3 background, it had current documentation written by the author of the framework, and it had all (or most) of the features I wanted. As it's open source I can add features I need that vanilla SFML may be lacking.
