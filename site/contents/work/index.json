@@ -45,6 +45,13 @@
         },
 
         {
+            "title": "VIP Nation",
+            "blurb": "Premium concert ticket packages and experiences.",
+            "link": "https://vipnation.com/",
+            "linkText": "Visit Site"
+        },
+
+        {
             "title": "Beat Boost",
             "blurb": "Ride waves across levels directly generated from the music.",
             "link": "/games/beat-boost",
@@ -68,13 +75,6 @@
             "title": "Framed",
             "blurb": "An Actionscript library for exporting MovieClips and the Flash Stage to PNG sequences for games and other applications.",
             "link": "/work/framed"
-        },
-
-        {
-            "title": "VIP Nation",
-            "blurb": "Premium concert ticket packages and experiences.",
-            "link": "https://vipnation.com/",
-            "linkText": "Visit Site"
         }
 
     ]
