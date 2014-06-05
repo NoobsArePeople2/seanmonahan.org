@@ -16,4 +16,4 @@ Splat is the second game I've made at the game design workshop and, like the pre
 
 So I'm building Splat in HTML, Javascript and Angular because, why not? A game like Splat is perfectly doable in plain old HTML/JS and using Angular gives me a neat first project there. Since Splat is a board game without any real-time interactive components a bunch of DOM elements should work fine. I guess we'll see how it goes as another part of this is to write more so I'll be writing here regularly (aiming for everyday that I actually work on the project) which means you can follow along!
 
-Next up: The Rules of Splat
+Next up: [The Rules of Splat](/blog/splat-rules)
