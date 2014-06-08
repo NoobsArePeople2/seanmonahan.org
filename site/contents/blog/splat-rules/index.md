@@ -28,4 +28,4 @@ Like I said at the top, these rules will probably see some changes but they're g
 
 <sup>1</sup> I say "three" because this felt like the best number in playtesting but two to four players are allowed.
 
-Next up: Day 1.
+Next up: [Day 1](/blog/splat-day-one).
