@@ -12,19 +12,6 @@
     "items": [
 
         {
-            "title": "Walk In Our Shoes",
-            "blurb": "Discover mental health and how to give and get help.",
-            "link": "/work/walk-in-our-shoes"
-        },
-
-        {
-            "title": "Deathliest Fighter",
-            "blurb": "Local multiplayer arena combat for 2 to 4 people on Mac and Windows.",
-            "link": "/games/deathliest-fighter",
-            "linkText": "Download the Game"
-        },
-
-        {
             "title": "Shibashiba",
             "blurb": "Take control of three shibas for 40 levels of running, jumping, sliding and dashing action.",
             "link": "http://shibashibagame.com/",
@@ -49,6 +36,13 @@
             "blurb": "Premium concert ticket packages and experiences.",
             "link": "https://vipnation.com/",
             "linkText": "Visit Site"
+        },
+
+        {
+            "title": "Deathliest Fighter",
+            "blurb": "Local multiplayer arena combat for 2 to 4 people on Mac and Windows.",
+            "link": "/games/deathliest-fighter",
+            "linkText": "Download the Game"
         },
 
         {
