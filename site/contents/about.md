@@ -15,4 +15,6 @@ My preferred tools of the trade are currently Javascript (and sometimes Coffeesc
 
 I'm also comfortable using Wordpress, Flex, Actionscript 3, Cocos2D, Moai, and Lua.
 
+Presently I work at Tag Creative Studio in downtown Seattle. I also work on small freelance projects on the side so [let's chat](/contact) if you think we could work together on something.
+
 Outside of software I enjoy both mountain and road biking, books, video games and beer (making and drinking it). You can find me on these sites:
