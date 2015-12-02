@@ -12,17 +12,15 @@
     "items": [
 
         {
-            "title": "Shibashiba",
-            "blurb": "Take control of three shibas for 40 levels of running, jumping, sliding and dashing action.",
-            "link": "http://shibashibagame.com/",
-            "linkText": "Visit Site + Download Game"
+            "title": "Funko",
+            "blurb": "Subscription storefront featuring collectibles based on Marvel heroes.",
+            "link": "/work/funko"
         },
 
         {
-            "title": "Zombie Playground",
-            "blurb": "Website and forum design and development for the 3D action, online battle RPG.",
-            "link": "http://zombieplaygroundgame.com/",
-            "linkText": "Visit Site"
+            "title": "Infiniti",
+            "blurb": "A Rich Interactive Advertisement featured at the Concours d'Elegance in Pebble Beach.",
+            "link": "/work/infiniti"
         },
 
         {
@@ -39,6 +37,38 @@
         },
 
         {
+            "title": "Boss Beatdown",
+            "blurb": "Classic 2D fighting action for Xbox 360, Xbox One and the Web.",
+            "link": "/work/boss-beatdown"
+        },
+
+        {
+            "title": "Swordpath",
+            "blurb": "Slice and dice a relentless robot army with nothing but your fingertips.",
+            "link": "/work/swordpath"
+        },
+
+        {
+            "title": "Zombie Playground",
+            "blurb": "Website and forum design and development for the 3D action, online battle RPG.",
+            "link": "http://zombieplaygroundgame.com/",
+            "linkText": "Visit Site"
+        },
+
+        {
+            "title": "Shibashiba",
+            "blurb": "Take control of three shibas for 40 levels of running, jumping, sliding and dashing action.",
+            "link": "http://shibashibagame.com/",
+            "linkText": "Visit Site + Download Game"
+        },
+
+        {
+            "title": "GnipGnop",
+            "blurb": "An experiment in creating a browser-based, multi-device networked multiplayer game that runs off a single code base on client and server.",
+            "link": "/work/gnipgnop"
+        },
+
+        {
             "title": "Deathliest Fighter",
             "blurb": "Local multiplayer arena combat for 2 to 4 people on Mac and Windows.",
             "link": "/games/deathliest-fighter",
@@ -50,12 +80,6 @@
             "blurb": "Ride waves across levels directly generated from the music.",
             "link": "/games/beat-boost",
             "linkText": "Play Beat Boost"
-        },
-
-        {
-            "title": "GnipGnop",
-            "blurb": "An experiment in creating a browser-based, multi-device networked multiplayer game that runs off a single code base on client and server.",
-            "link": "/work/gnipgnop"
         },
 
         {
