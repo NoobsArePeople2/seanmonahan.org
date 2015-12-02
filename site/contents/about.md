@@ -9,12 +9,12 @@ description: Short bio of Sean Monahan
 
 # About Sean
 
-I'm a software developer living and working in Seattle, WA. I make websites, apps and games for desktop and mobile. My work includes ticket sales sites, desktop B2B sales and merchandising tools, mobile apps, games, Wordpress sites and a handful of tools to support these endeavors.
+I'm a software developer focused on creating great experiences on the web and mobile. My work includes ticket sales sites, desktop B2B sales and merchandising tools, ePub readers and mobile apps.
 
-My preferred tools of the trade are currently Javascript (and sometimes Coffeescript), Angular, jQuery, SASS/Compass and, naturally, HTML5. On the server-side of things I use PHP but have been known to write some Ruby.
+My preferred tools of the trade are currently Javascript, Angular, jQuery, SASS/Compass, HTML5 and Unity. On the server-side of things I use PHP and Node.js but have been known to write some Ruby.
 
-I'm also comfortable using Wordpress, Flex, Actionscript 3, Cocos2D, Moai, and Lua.
+I'm also comfortable with Cordova, Wordpress, Flex, Actionscript 3, Cocos2D, Moai, and Lua.
 
-Presently I work at Tag Creative Studio in downtown Seattle. I also work on small freelance projects on the side so [let's chat](/contact) if you think we could work together on something.
+Presently I work in downtown Seattle as the Development Director at Tag Creative Studio. I lead a small team of developers and work with our design team to craft products for clients in ecommerce, education and virtual reality.
 
 Outside of software I enjoy both mountain and road biking, books, video games and beer (making and drinking it). You can find me on these sites:

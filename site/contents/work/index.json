@@ -12,10 +12,28 @@
     "items": [
 
         {
-            "title": "Shibashiba",
-            "blurb": "Take control of three shibas for 40 levels of running, jumping, sliding and dashing action.",
-            "link": "http://shibashibagame.com/",
-            "linkText": "Visit Site + Download Game"
+            "title": "Funko",
+            "blurb": "Subscription storefront featuring collectibles based on Marvel heroes.",
+            "link": "/work/funko"
+        },
+
+        {
+            "title": "Elastic Suite",
+            "blurb": "A collection of custom branded tools for business-to-business sales.",
+            "link": "/work/elastic-suite"
+        },
+
+        {
+            "title": "Boss Beatdown",
+            "blurb": "Classic 2D fighting action for Xbox 360, Xbox One and the Web.",
+            "link": "/work/boss-beatdown"
+        },
+
+        {
+            "title": "VIP Nation",
+            "blurb": "Premium concert ticket packages and experiences.",
+            "link": "https://vipnation.com/",
+            "linkText": "Visit Site"
         },
 
         {
@@ -26,16 +44,16 @@
         },
 
         {
-            "title": "Elastic Suite",
-            "blurb": "A collection of custom branded tools for business-to-business sales.",
-            "link": "/work/elastic-suite"
+            "title": "Shibashiba",
+            "blurb": "Take control of three shibas for 40 levels of running, jumping, sliding and dashing action.",
+            "link": "http://shibashibagame.com/",
+            "linkText": "Visit Site + Download Game"
         },
 
         {
-            "title": "VIP Nation",
-            "blurb": "Premium concert ticket packages and experiences.",
-            "link": "https://vipnation.com/",
-            "linkText": "Visit Site"
+            "title": "GnipGnop",
+            "blurb": "An experiment in creating a browser-based, multi-device networked multiplayer game that runs off a single code base on client and server.",
+            "link": "/work/gnipgnop"
         },
 
         {
@@ -50,12 +68,6 @@
             "blurb": "Ride waves across levels directly generated from the music.",
             "link": "/games/beat-boost",
             "linkText": "Play Beat Boost"
-        },
-
-        {
-            "title": "GnipGnop",
-            "blurb": "An experiment in creating a browser-based, multi-device networked multiplayer game that runs off a single code base on client and server.",
-            "link": "/work/gnipgnop"
         },
 
         {

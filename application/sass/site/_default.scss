@@ -422,54 +422,64 @@ body {
     position: relative;
     overflow: hidden;
 
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: #{$itemSize}px #{$itemSize}px;
+
     &.deathliest-fighter {
-      background: url('../images/work/splash/deathliest.png') center center no-repeat;
-      background-size: #{$itemSize}px #{$itemSize}px;
+      background-image: url('../images/work/splash/deathliest.png');
     }
 
     &.airpad {
-      background: url('../images/work/splash/airpad.jpg') center center no-repeat;
-      background-size: #{$itemSize}px #{$itemSize}px;
+      background-image: url('../images/work/splash/airpad.jpg');
     }
 
     &.shibashiba {
-      background: url('../images/work/splash/shiba.jpg') center center no-repeat;
-      background-size: #{$itemSize}px #{$itemSize}px;
+      background-image: url('../images/work/splash/shiba.jpg');
     }
 
     &.elastic-suite {
-      background: url('../images/work/splash/elastic.jpg') center center no-repeat;
-      background-size: #{$itemSize}px #{$itemSize}px;
+      background-image: url('../images/work/splash/elastic.jpg');
     }
 
     &.beat-boost {
-      background: url('../images/work/splash/beat-boost.jpg') center center no-repeat;
-      background-size: #{$itemSize}px #{$itemSize}px;
+      background-image: url('../images/work/splash/beat-boost.jpg');
     }
 
     &.framed {
-      background: url('../images/work/splash/framed.jpg') center center no-repeat;
-      background-size: #{$itemSize}px #{$itemSize}px;
+      background-image: url('../images/work/splash/framed.jpg');
     }
 
     &.gnipgnop {
-      background: url('../images/work/splash/gnipgnop.jpg') center center no-repeat;
-      background-size: #{$itemSize}px #{$itemSize}px;
+      background-image: url('../images/work/splash/gnipgnop.jpg');
     }
 
     &.zombie-playground {
-      background: url('../images/work/splash/zpg.jpg') center center no-repeat;
-      background-size: #{$itemSize}px #{$itemSize}px;
+      background-image: url('../images/work/splash/zpg.jpg');
     }
 
     &.vip-nation {
-      background: url('../images/work/splash/vipnation.jpg') center center no-repeat;
-      background-size: #{$itemSize}px #{$itemSize}px;
+      background-image: url('../images/work/splash/vipnation.jpg');
     }
 
     &.walk-in-our-shoes {
-      background: url('../images/work/splash/walk-in-our-shoes.png') center center no-repeat;
-      background-size: #{$itemSize}px #{$itemSize}px;
+      background-image: url('../images/work/splash/walk-in-our-shoes.png');
+    }
+
+    &.infiniti {
+      background-image: url('../images/work/splash/infiniti.jpg');
+    }
+
+    &.funko {
+      background-image: url('../images/work/splash/funko.jpg');
+    }
+
+    &.swordpath {
+      background-image: url('../images/work/splash/swordpath.jpg');
+    }
+
+    &.boss-beatdown {
+      background-image: url('../images/work/splash/boss-beatdown.jpg');
     }
 
     .title {
@@ -617,9 +627,11 @@ body {
 
 #post-header {
 
+  @include background-size(cover);
+  background-position: center center;
+
   &.beat-boost {
-    background: url('../images/work/beat-boost/header.png') center center;
-    @include background-size(cover);
+    background-image: url('../images/work/beat-boost/header.png');
     height: pixel-to-em(160, 16);
 
     h1 {
@@ -632,8 +644,7 @@ body {
   }
 
   &.elastic-suite {
-    background: url('../images/work/elastic/header.jpg') center center;
-    @include background-size(cover);
+    background-image: url('../images/work/elastic/header.jpg');
     height: pixel-to-em(160, 16);
 
     h1 {
@@ -642,8 +653,7 @@ body {
   }
 
   &.gnipgnop {
-    background: url('../images/work/gnipgnop/header.jpg') center center;
-    @include background-size(cover);
+    background-image: url('../images/work/gnipgnop/header.jpg');
     height: pixel-to-em(160, 16);
 
     h1 {
@@ -652,8 +662,34 @@ body {
   }
 
   &.walk-in-our-shoes {
-    background: url('../images/work/walk-in-our-shoes/header.jpg') center center;
-    @include background-size(cover);
+    background-image: url('../images/work/walk-in-our-shoes/header.jpg');
+    height: pixel-to-em(260, 16);
+
+    h1 {
+      padding-top: pixel-to-em(200, 42);
+    }
+  }
+
+  &.funko {
+    background-image: url('../images/work/funko/header.jpg');
+    height: pixel-to-em(260, 16);
+
+    h1 {
+      padding-top: pixel-to-em(200, 42);
+    }
+  }
+
+  &.infiniti {
+    background-image: url('../images/work/infiniti/header.jpg');
+    height: pixel-to-em(260, 16);
+
+    h1 {
+      padding-top: pixel-to-em(200, 42);
+    }
+  }
+
+  &.boss-beatdown {
+    background-image: url('../images/work/boss-beatdown/header.jpg');
     height: pixel-to-em(260, 16);
 
     h1 {
