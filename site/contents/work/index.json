@@ -18,12 +18,6 @@
         },
 
         {
-            "title": "Infiniti",
-            "blurb": "A Rich Interactive Advertisement featured at the Concours d'Elegance in Pebble Beach.",
-            "link": "/work/infiniti"
-        },
-
-        {
             "title": "Elastic Suite",
             "blurb": "A collection of custom branded tools for business-to-business sales.",
             "link": "/work/elastic-suite"
@@ -40,6 +34,12 @@
             "title": "Boss Beatdown",
             "blurb": "Classic 2D fighting action for Xbox 360, Xbox One and the Web.",
             "link": "/work/boss-beatdown"
+        },
+
+        {
+            "title": "Infiniti",
+            "blurb": "A Rich Interactive Advertisement featured at the Concours d'Elegance in Pebble Beach.",
+            "link": "/work/infiniti"
         },
 
         {

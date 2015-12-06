@@ -627,9 +627,11 @@ body {
 
 #post-header {
 
+  @include background-size(cover);
+  background-position: center center;
+
   &.beat-boost {
-    background: url('../images/work/beat-boost/header.png') center center;
-    @include background-size(cover);
+    background-image: url('../images/work/beat-boost/header.png');
     height: pixel-to-em(160, 16);
 
     h1 {
@@ -642,8 +644,7 @@ body {
   }
 
   &.elastic-suite {
-    background: url('../images/work/elastic/header.jpg') center center;
-    @include background-size(cover);
+    background-image: url('../images/work/elastic/header.jpg');
     height: pixel-to-em(160, 16);
 
     h1 {
@@ -652,8 +653,7 @@ body {
   }
 
   &.gnipgnop {
-    background: url('../images/work/gnipgnop/header.jpg') center center;
-    @include background-size(cover);
+    background-image: url('../images/work/gnipgnop/header.jpg');
     height: pixel-to-em(160, 16);
 
     h1 {
@@ -662,8 +662,25 @@ body {
   }
 
   &.walk-in-our-shoes {
-    background: url('../images/work/walk-in-our-shoes/header.jpg') center center;
-    @include background-size(cover);
+    background-image: url('../images/work/walk-in-our-shoes/header.jpg');
+    height: pixel-to-em(260, 16);
+
+    h1 {
+      padding-top: pixel-to-em(200, 42);
+    }
+  }
+
+  &.funko {
+    background-image: url('../images/work/funko/header.jpg');
+    height: pixel-to-em(260, 16);
+
+    h1 {
+      padding-top: pixel-to-em(200, 42);
+    }
+  }
+
+  &.infiniti {
+    background-image: url('../images/work/infiniti/header.jpg');
     height: pixel-to-em(260, 16);
 
     h1 {
