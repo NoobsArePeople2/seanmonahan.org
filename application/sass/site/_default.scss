@@ -688,6 +688,15 @@ body {
     }
   }
 
+  &.boss-beatdown {
+    background-image: url('../images/work/boss-beatdown/header.jpg');
+    height: pixel-to-em(260, 16);
+
+    h1 {
+      padding-top: pixel-to-em(200, 42);
+    }
+  }
+
 
   h1 {
     margin: 0;
